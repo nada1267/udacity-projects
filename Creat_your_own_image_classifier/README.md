@@ -21,48 +21,48 @@ torchvision transforms are used to augment the training data with random scaling
 **🔎Data normalization**
 The training, validation, and testing data is appropriately cropped and normalized
 
-**🔎Data loading**
+**🛢Data loading**
 The data for each set (train, validation, test) is loaded with torchvision's ImageFolder
 
-**🔎Data batching**
+**🛢Data batching**
 The data for each set is loaded with torchvision's DataLoader
 
-**🔎Pretrained Network**
+**🛢Pretrained Network**
 
 A pretrained network such as VGG16 is loaded from torchvision.models and the parameters are frozen
 
-**🔎Feedforward Classifier**
+**⏳Feedforward Classifier**
 
 A new feedforward network is defined for use as a classifier using the features as input
 
-**🔎Training the network**
+**⏳Training the network**
 
 The parameters of the feedforward classifier are appropriately trained, while the parameters of the feature network are left static
 
-**🔎Validation Loss**
+**⏳Validation Loss**
 
 and Accuracy	During training, the validation loss and accuracy are displayed
 
-**🔎Testing Accuracy**
+**💣Testing Accuracy**
 
 The network's accuracy is measured on the test data
 
-**🔎Saving the model**
+**💣Saving the model**
 The trained model is saved as a checkpoint along with associated hyperparameters and the class_to_idx dictionary
 
-**🔎Loading checkpoints:**
+**💣Loading checkpoints:**
 
 There is a function that successfully loads a checkpoint and rebuilds the model
 
-**🔎Image Processing:**
+**📌Image Processing:**
 
 The process_image function successfully converts a PIL image into an object that can be used as input to a trained model
 
-**🔎Class Prediction**
+**📌Class Prediction**
 
 The predict function successfully takes the path to an image and a checkpoint, then returns the top K most probably classes for that image
 
-**🔎Sanity Checking :**
+**📌Sanity Checking :**
 
 with matplotlib	A matplotlib figure is created displaying an image and its associated top 5 most probable classes with actual flower names
 
