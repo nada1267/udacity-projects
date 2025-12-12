@@ -7,7 +7,7 @@
 **🎯part two: Command Line Application**
 
 **overview**:
-this a python program used a pretrained neueral network to classify images using python conepts to aplly it it's a great and useful program.
+this a python program used neueral network to classify images using python conepts to apply it , it's a great and useful program.
 
 **🔎Package Imports**
 
