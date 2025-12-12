@@ -1,0 +1,85 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+Filename = Dog_01.jpg     label = dog
+File: Dog_01.jpg
+Empty dictionary has 0 items
+Filename = Dog_02.jpg     label = dog
+File: Dog_02.jpg
+Empty dictionary has 1 items
+Filename = Cat_01.jpg     label = cat
+File: Cat_01.jpg
+Empty dictionary has 2 items
+Filename = Clock_01.jpg     label = clock
+File: Clock_01.jpg
+Empty dictionary has 3 items
+Printing all key-value pairs in dictionary results_dic:
+filename = Dog_01.jpg     pet label = dog
+filename = Dog_02.jpg     pet label = dog
+filename = Cat_01.jpg     pet label = cat
+filename = Clock_01.jpg     pet label = clock
+Full dictionary has 4 items
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:                     Cat_01.jpg  label:                        cat
+ 4 key:                   Clock_01.jpg  label:                      clock
+{'Dog_01.jpg': ['dog', 'french bulldog', 1], 'Dog_02.jpg': ['dog', 'french bulldog', 1], 'Cat_01.jpg': ['cat', 'egyptian cat, cat', 1], 'Clock_01.jpg': ['clock', 'analog clock', 1]}
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                 french bulldog
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                 french bulldog
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat
+
+                  Clock_01.jpg: 
+Real:                      clock   Classifier:                   analog clock
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                 french bulldog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                 french bulldog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                  Clock_01.jpg: 
+Real:                      clock   Classifier:                   analog clock  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+ 
+pct_match: 100.0
+pct_correct_dogs: 100.0
+pct_correct_breed: 100.0
+pct_correct_notdogs: 100.0
+
+** Total Elapsed Runtime: 0:0:4
